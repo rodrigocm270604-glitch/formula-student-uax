@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>UAX Racing Team · Formula Student</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tipografía Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-logo">
+            <!-- Si tienes logo, cámbialo por una imagen -->
+            <span class="logo-mark">UAX</span>
+            <span class="logo-text">Racing Team</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#hero">Inicio</a>
+            <a href="#project">Proyecto</a>
+            <a href="#departments">Departamentos</a>
+            <a href="#team">Equipo</a>
+            <a href="#join">Únete</a>
+            <a href="#sponsors">Sponsors</a>
+        </nav>
+    </header>
+
+    <!-- HERO INMERSIVO -->
+    <section class="hero" id="hero">
+        <!-- Vídeo de fondo (opcional, puedes quitarlo si no tienes) -->
+        <video class="hero-video" autoplay muted loop playsinline>
+            <!-- Sustituye la ruta por tu vídeo -->
+            <source src="assets/video/hero-loop.mp4" type="video/mp4">
+        </video>
+
+        <!-- Capa oscura encima del vídeo -->
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <p class="hero-kicker">Formula Student · Universidad Alfonso X el Sabio</p>
+            <h1>UAX RACING TEAM</h1>
+            <p class="tagline">
+                Mientras otros presumen de su pasado,<br>
+                nosotros estamos construyendo nuestro futuro.
+            </p>
+            <div class="hero-cta">
+                <a href="#join" class="btn primary">Únete al equipo</a>
+                <a href="#project" class="btn secondary">Conoce el proyecto</a>
+            </div>
+            <p class="hero-subtext">
+                Equipo nuevo. Mentalidad profesional.  
+                Esto no es un proyecto de clase.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN QUIÉNES SOMOS -->
+    <section class="section section-light">
+        <div class="section-inner">
+            <h2>Quiénes somos</h2>
+            <p>
+                UAX Racing Team es el equipo de Formula Student de la Universidad Alfonso X el Sabio.
+                Nacemos sin historia, pero con algo más peligroso: una visión clara.
+            </p>
+            <p>
+                No somos un club académico. No somos un trabajo de asignatura.
+                Somos un equipo de competición que trabaja desde el primer día con mentalidad de escudería.
+            </p>
+
+            <div class="pill-row">
+                <span class="pill">Ingeniería real</span>
+                <span class="pill">Responsabilidad</span>
+                <span class="pill">Datos y criterio</span>
+                <span class="pill">Aprendizaje brutal</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PROYECTO -->
+    <section class="section section-dark" id="project">
+        <div class="section-inner two-columns">
+            <div>
+                <h2>El proyecto</h2>
+                <p>
+                    Nuestro objetivo es diseñar y construir un monoplaza bajo la normativa Formula Student.
+                    Cada decisión de diseño, cada cálculo y cada pieza montada responde a un proceso técnico real.
+                </p>
+                <p>
+                    El coche aún no está en pista.  
+                    Pero el trabajo ya ha empezado.
+                </p>
+
+                <ul class="checklist">
+                    <li>Diseño desde cero</li>
+                    <li>Metodología por fases</li>
+                    <li>Trabajo por departamentos</li>
+                    <li>Validación y mejora continua</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>Estado del monoplaza</h3>
+                <div class="progress-group">
+                    <span>Concepto</span>
+                    <div class="progress"><div class="progress-bar p100"></div></div>
+                </div>
+                <div class="progress-group">
+                    <span>Diseño</span>
+                    <div class="progress"><div class="progress-bar p60"></div></div>
+                </div>
+                <div class="progress-group">
+                    <span>Simulación</span>
+                    <div class="progress"><div class="progress-bar p30"></div></div>
+                </div>
+                <div class="progress-group">
+                    <span>Fabricación</span>
+                    <div class="progress"><div class="progress-bar p0"></div></div>
+                </div>
+                <p class="project-note">
+                    *Datos orientativos. El objetivo es claro: llegar a pista con un coche sólido, no con prisas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DEPARTAMENTOS -->
+    <section class="section section-gradient" id="departments">
+        <div class="section-inner">
+            <h2>Cómo trabajamos</h2>
+            <p class="section-intro">
+                Nos organizamos como una escudería real. Cada departamento tiene responsabilidad, objetivos
+                y decisiones que afectan directamente al coche.
+            </p>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Chasis y estructuras</h3>
+                    <p>Diseño estructural, seguridad y rigidez. La base sobre la que se construye todo lo demás.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Dinámica de vehículo</h3>
+                    <p>Suspensión, dirección, frenos y comportamiento en pista. Hacer que el coche funcione donde importa.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Aerodinámica</h3>
+                    <p>Flujo de aire, carga y estabilidad. No buscamos piezas bonitas, buscamos rendimiento.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Electrónica / Powertrain</h3>
+                    <p>Sistema eléctrico, sensorización y control. El cerebro que conecta datos y rendimiento.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Gestión y patrocinadores</h3>
+                    <p>Presupuesto, planificación y relación con empresas. Sin recursos, el coche no existe.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Comunicación y marketing</h3>
+                    <p>Marca, redes y contenido. Que el mundo sepa qué estamos construyendo.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN EQUIPO -->
+    <section class="section section-light" id="team">
+        <div class="section-inner">
+            <h2>El equipo</h2>
+            <p class="section-intro">
+                Somos estudiantes de grados distintos, pero compartimos lo mismo:
+                ganas de trabajar en algo que nos exija más que un examen.
+            </p>
+
+            <div class="team-grid">
+                <!-- Ejemplos, cámbialos por nombres reales -->
+                <div class="team-card">
+                    <div class="avatar"></div>
+                    <h3>Team Leader</h3>
+                    <p>Coordina el proyecto, los tiempos y la comunicación entre departamentos.</p>
+                </div>
+                <div class="team-card">
+                    <div class="avatar"></div>
+                    <h3>Technical Lead</h3>
+                    <p>Supervisión técnica global del monoplaza y criterios de diseño.</p>
+                </div>
+                <div class="team-card">
+                    <div class="avatar"></div>
+                    <h3>Responsables de área</h3>
+                    <p>Cada departamento con su propio líder, responsables de decisiones reales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SPONSORS -->
+    <section class="section section-dark" id="sponsors">
+        <div class="section-inner two-columns">
+            <div>
+                <h2>Sponsors y partners</h2>
+                <p>
+                    Estamos construyendo un proyecto desde cero, con recorrido a largo plazo.
+                    Buscamos empresas que quieran crecer con nosotros desde el inicio.
+                </p>
+                <p>
+                    Ofrecemos visibilidad real, presencia en eventos, contenido técnico y una conexión directa
+                    con talento joven que ya está trabajando como lo hará en la industria.
+                </p>
+                <a href="mailto:tucorreo@uax.es" class="btn primary">Quiero más información</a>
+            </div>
+            <div class="sponsor-box">
+                <p class="sponsor-placeholder">
+                    Aquí irán los logotipos de los primeros sponsors.  
+                    <span>Tu logo puede ser uno de ellos.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ÚNETE -->
+    <section class="section section-cta" id="join">
+        <div class="section-inner">
+            <h2>Forma parte del inicio</h2>
+            <p class="section-intro">
+                Esto no es un equipo con una historia escrita.  
+                Es un equipo que la está escribiendo ahora.
+            </p>
+            <p>
+                No importa el curso. No importa la experiencia previa.  
+                Importa la actitud y las ganas de tomarte esto en serio.
+            </p>
+
+            <div class="join-actions">
+                <a href="mailto:tucorreo@uax.es?subject=Quiero unirme a UAX Racing Team"
+                   class="btn primary big">
+                    Quiero unirme al equipo
+                </a>
+                <p class="join-note">
+                    Cuéntanos quién eres, qué estudias y qué departamento te interesa.  
+                    A partir de ahí, hablamos en serio.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>UAX Racing Team · Formula Student</p>
+        <p>Universidad Alfonso X el Sabio</p>
+    </footer>
+
+</body>
+</html>
