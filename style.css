@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background-color: #050509;
-    color: #f5f5f5;
+    font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f5f7fb; /* fondo claro */
+    color: #0b1533; /* azul muy oscuro para texto */
     line-height: 1.6;
 }
 
@@ -23,8 +23,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 7vw;
-    background: rgba(5, 5, 9, 0.92);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.94);
+    border-bottom: 1px solid rgba(0, 60, 136, 0.12);
     z-index: 20;
     backdrop-filter: blur(10px);
 }
@@ -39,6 +39,7 @@ body {
     font-weight: 800;
     letter-spacing: 2px;
     font-size: 1.1rem;
+    color: #003c88; /* azul corporativo */
 }
 
 .logo-text {
@@ -46,20 +47,21 @@ body {
     font-size: 0.9rem;
     text-transform: uppercase;
     opacity: 0.7;
+    color: #08305d;
 }
 
 .nav-links a {
     margin-left: 20px;
     font-size: 0.9rem;
     text-decoration: none;
-    color: #f5f5f5;
+    color: #0b1533;
     opacity: 0.7;
     transition: opacity 0.2s ease, color 0.2s ease;
 }
 
 .nav-links a:hover {
     opacity: 1;
-    color: #ffffff;
+    color: #0057b8;
 }
 
 /* HERO */
@@ -71,7 +73,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
-    background: radial-gradient(circle at top left, #23263a 0, #050509 50%, #000000 100%);
+    background: radial-gradient(circle at top left, #d9e7ff 0, #f5f7fb 45%, #e3ecff 100%);
 }
 
 /* vídeo de fondo (si no hay vídeo, no pasa nada) */
@@ -81,15 +83,15 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.18;
+    opacity: 0.16;
     z-index: 0;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at top left, rgba(255,255,255,0.08), transparent 40%),
-                linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,1));
+    background: radial-gradient(circle at top left, rgba(0, 87, 184, 0.18), transparent 45%),
+                linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(245,247,251,1));
     z-index: 1;
 }
 
@@ -104,7 +106,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.75rem;
-    color: #bbbbbb;
+    color: #4b6285;
     margin-bottom: 14px;
 }
 
@@ -112,12 +114,13 @@ body {
     font-size: clamp(2.8rem, 5vw, 4.2rem);
     letter-spacing: 4px;
     font-weight: 800;
+    color: #001441;
 }
 
 .tagline {
     margin-top: 24px;
     font-size: 1.25rem;
-    color: #e6e6e6;
+    color: #2a385a;
 }
 
 .hero-cta {
@@ -130,7 +133,7 @@ body {
 .hero-subtext {
     margin-top: 26px;
     font-size: 0.9rem;
-    color: #a1a1a1;
+    color: #5a6789;
 }
 
 /* BOTONES */
@@ -140,7 +143,7 @@ body {
     justify-content: center;
     padding: 10px 24px;
     border-radius: 999px;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(0, 74, 155, 0.3);
     text-decoration: none;
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -150,23 +153,25 @@ body {
 }
 
 .btn.primary {
-    background: #ffffff;
-    color: #050509;
+    background: #0057b8; /* azul principal */
+    color: #ffffff;
+    border-color: transparent;
 }
 
 .btn.secondary {
     background: transparent;
-    color: #f5f5f5;
-    opacity: 0.75;
+    color: #0057b8;
+    opacity: 0.85;
+    border-color: rgba(0, 87, 184, 0.35);
 }
 
 .btn.primary:hover {
-    background: #dcdcdc;
+    background: #00479a;
 }
 
 .btn.secondary:hover {
     opacity: 1;
-    background: rgba(255,255,255,0.06);
+    background: rgba(0, 87, 184, 0.06);
 }
 
 /* SECCIONES GENERALES */
@@ -175,22 +180,22 @@ body {
 }
 
 .section-light {
-    background: #f5f5f5;
-    color: #111111;
+    background: #ffffff;
+    color: #0b1533;
 }
 
 .section-dark {
-    background: #050509;
-    color: #f5f5f5;
+    background: #001735;
+    color: #f5f7fb;
 }
 
 .section-gradient {
-    background: radial-gradient(circle at top left, #202337, #050509 60%);
-    color: #f5f5f5;
+    background: radial-gradient(circle at top left, #003c88, #001735 60%);
+    color: #f5f7fb;
 }
 
 .section-cta {
-    background: #0b0b12;
+    background: #003c88;
     color: #f5f5f5;
 }
 
@@ -202,11 +207,12 @@ body {
 .section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: inherit;
 }
 
 .section-intro {
     font-size: 1rem;
-    opacity: 0.85;
+    opacity: 0.9;
     margin-bottom: 20px;
 }
 
@@ -221,9 +227,10 @@ body {
 .pill {
     padding: 6px 14px;
     border-radius: 999px;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 60, 136, 0.15);
     font-size: 0.8rem;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.92);
+    color: #08305d;
 }
 
 /* LISTA CHECK */
@@ -245,7 +252,7 @@ body {
     left: 0;
     top: 0;
     font-size: 0.55rem;
-    color: #ff4b4b;
+    color: #0057b8; /* azul en lugar de rojo */
     transform: translateY(4px);
 }
 
@@ -259,17 +266,19 @@ body {
 
 /* TARJETA PROYECTO */
 .project-card {
-    background: rgba(15, 15, 24, 0.9);
+    background: #ffffff;
     border-radius: 18px;
     padding: 20px 22px;
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 18px 45px rgba(0,0,0,0.6);
+    border: 1px solid rgba(0, 60, 136, 0.12);
+    box-shadow: 0 18px 45px rgba(0, 23, 53, 0.14);
     font-size: 0.9rem;
+    color: #0b1533;
 }
 
 .project-card h3 {
     margin-bottom: 16px;
     font-size: 1.05rem;
+    color: #001441;
 }
 
 .progress-group {
@@ -286,14 +295,14 @@ body {
     width: 100%;
     height: 6px;
     border-radius: 999px;
-    background: rgba(255,255,255,0.08);
+    background: rgba(0, 60, 136, 0.08);
     overflow: hidden;
 }
 
 .progress-bar {
     height: 100%;
     border-radius: inherit;
-    background: linear-gradient(90deg, #ff4b4b, #ffb347);
+    background: linear-gradient(90deg, #0057b8, #62a5ff);
     width: 0;
 }
 
@@ -304,7 +313,7 @@ body {
 
 .project-note {
     margin-top: 16px;
-    opacity: 0.7;
+    opacity: 0.75;
     font-size: 0.8rem;
 }
 
@@ -317,15 +326,17 @@ body {
 }
 
 .card {
-    background: rgba(5, 5, 12, 0.9);
+    background: #ffffff;
     border-radius: 16px;
     padding: 18px 18px 20px;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(0, 60, 136, 0.12);
     font-size: 0.9rem;
+    color: #0b1533;
 }
 
 .card h3 {
     margin-bottom: 10px;
+    color: #001441;
 }
 
 /* EQUIPO */
@@ -340,43 +351,48 @@ body {
     background: #ffffff;
     border-radius: 16px;
     padding: 16px 18px 20px;
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 60, 136, 0.12);
     font-size: 0.9rem;
+    color: #0b1533;
 }
 
 .team-card h3 {
     margin-top: 10px;
     margin-bottom: 8px;
+    color: #001441;
 }
 
 .avatar {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #111827, #6b7280);
+    background: linear-gradient(135deg, #003c88, #62a5ff);
 }
 
 /* SPONSORS */
 .sponsor-box {
     border-radius: 18px;
     padding: 20px;
-    border: 1px dashed rgba(255,255,255,0.35);
+    border: 1px dashed rgba(0, 60, 136, 0.5);
     min-height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(255,255,255,0.96);
+    color: #0b1533;
 }
 
 .sponsor-placeholder {
     text-align: center;
     font-size: 0.9rem;
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 .sponsor-placeholder span {
     display: block;
     margin-top: 6px;
     font-weight: 600;
+    color: #003c88;
 }
 
 /* CTA ÚNETE */
@@ -392,15 +408,15 @@ body {
 .join-note {
     margin-top: 14px;
     font-size: 0.85rem;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /* FOOTER */
 .footer {
     padding: 26px 7vw;
     text-align: center;
-    background: #000000;
-    color: #b5b5b5;
+    background: #001735;
+    color: #dbe4ff;
     font-size: 0.8rem;
 }
 
@@ -434,4 +450,5 @@ body {
         font-size: 1.05rem;
     }
 }
+
 
